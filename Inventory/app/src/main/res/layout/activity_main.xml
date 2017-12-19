@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.android.inventory.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/header_main" />
+
+            <TextView
+                android:id="@+id/header_title"
+                style="@style/MainActivityTitle"
+                android:text="@string/storeName" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/darkbrown" />
+
+        <!--Quantity Color Indicators-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/red_indicator"
+                style="@style/quantityIndicators" />
+
+            <ImageView
+                android:id="@+id/orange_indicator"
+                style="@style/quantityIndicators" />
+
+            <ImageView
+                android:id="@+id/yellow_indicator"
+                style="@style/quantityIndicators" />
+
+            <ImageView
+                android:id="@+id/greenish_indicator"
+                style="@style/quantityIndicators" />
+
+            <ImageView
+                android:id="@+id/green_indicator"
+                style="@style/quantityIndicators" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/lessThan100"
+                style="@style/QuantityIndicatorText"
+                android:text="@string/lessThan100" />
+
+            <TextView
+                android:id="@+id/lessThan200"
+                style="@style/QuantityIndicatorText"
+                android:text="@string/lessThan200" />
+
+            <TextView
+                android:id="@+id/lessThan300"
+                style="@style/QuantityIndicatorText"
+                android:text="@string/lessThan300" />
+
+            <TextView
+                android:id="@+id/lessThan400"
+                style="@style/QuantityIndicatorText"
+                android:text="@string/lessThan400" />
+
+            <TextView
+                android:id="@+id/moreThan400"
+                style="@style/QuantityIndicatorText"
+                android:text="@string/greaterThan400" />
+
+        </LinearLayout>
+
+        <!--List of Items in inventory-->
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorAccent"
+            android:dividerHeight="1dp"
+            android:focusable="false"/>
+
+        <!-- Empty view for the list -->
+        <RelativeLayout
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/empty_shelter_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/empty_listview" />
+
+            <TextView
+                android:id="@+id/empty_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/empty_shelter_image"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="30dp"
+                android:text="@string/titleText"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/empty_subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/empty_title_text"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="22dp"
+                android:text="@string/subText"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#A2AAB0" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/plus_sign"
+        app:backgroundTint="@color/white" />
+</RelativeLayout>
+
+
+
+

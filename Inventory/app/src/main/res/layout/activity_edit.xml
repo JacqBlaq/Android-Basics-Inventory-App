@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="1dp"
+    tools:context="com.example.android.inventory.EditActivity">
+
+    <!--Header-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/header_main" />
+
+        <TextView
+            android:id="@+id/add_New_Header"
+            style="@style/MainActivityTitle"
+            android:text="Add a new Item" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/edit_background2"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_frame"
+                android:orientation="vertical">
+
+                <!--Product Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/pName"
+                        style="@style/editbox_category"
+                        android:text="@string/pName"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/product_name"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/editbox_frame"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <!--Price-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/pPrice"
+                        style="@style/editbox_category"
+                        android:text="@string/price"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/product_price"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/editbox_frame"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <!--Category-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/pCategory"
+                        style="@style/editbox_category"
+                        android:text="@string/category"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/product_category"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <!--Quantity-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/pQantity"
+                        style="@style/editbox_category"
+                        android:layout_gravity="center"
+                        android:text="@string/quantity"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/minus_button"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/minus_button" />
+
+                        <EditText
+                            android:id="@+id/product_quantity"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/editbox_frame"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:text="0" />
+
+                        <Button
+                            android:id="@+id/plus_button"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/add_button" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Suppplier-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/pSNAme"
+                        style="@style/details_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/supName"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/supplier_name"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/editbox_frame"
+                            android:hint="@string/supNameHint"
+                            android:inputType="text" />
+
+                        <Button
+                            android:id="@+id/contact_Supplier"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/contact_button"
+                            android:text="Order More"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/pSPhone"
+                        style="@style/details_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/supPhone"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/supplier_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editbox_frame"
+                        android:hint="@string/supPhoneHint"
+                        android:inputType="phone" />
+
+                    <TextView
+                        android:id="@+id/pSEmail"
+                        style="@style/details_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/supEmail"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/supplier_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/editbox_frame"
+                        android:hint="@string/supEmailHint"
+                        android:inputType="textEmailAddress" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:src="@drawable/circle" />
+
+                <Button
+                    android:id="@+id/image_display_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:text="@string/imageButton"
+                    android:textColor="@color/white" />
+
+            </LinearLayout> <!-- End of List-->
+
+        </ScrollView>
+
+        <!--FAB to save or delete item-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/edit_Options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/fab_margin"
+            app:backgroundTint="@color/white"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_menu_share" />
+
+        <!--Go back to home page button-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/back_to_homePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/left_arrow"
+            app:backgroundTint="@color/white"
+            app:fabSize="normal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

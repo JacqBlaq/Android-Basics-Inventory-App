@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="transWhite">#78ffffff</color>
+    <color name="grey">#e6e6e6</color>
+    <color name="white">#ffffff</color>
+    <color name="purple">#6a0136</color>
+    <color name="tanyellow">#bfab25</color>
+    <color name="red">#c05746</color>
+    <color name="brown">#484538</color>
+    <color name="darkbrown">#231c07</color>
+    <color name="blue">#016fb9</color>
+    <color name="tan">#e3dbbea1</color>
+
+    <!--Colors for Indicators-->
+    <color name="red_indicator">#b30000</color>
+    <color name="orange">#ff9505</color>
+    <color name="yellow">#ffcc00</color>
+    <color name="greenish">#a6b709</color>
+    <color name="green">#1bb300</color>
+
+</resources>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.inventory.MainActivity">
+
+    <item
+        android:id="@+id/action_dummy_data"
+        android:title="@string/dummyData"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_delete_all_entries"
+        android:title="@string/delete_all"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_add_item"
+        android:title="@string/add_item"
+        app:showAsAction="never"/>
+</menu>

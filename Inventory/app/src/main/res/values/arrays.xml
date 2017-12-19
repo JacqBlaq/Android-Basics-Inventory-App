@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_of_Categories">
+        <item>Figures</item>
+        <item>Clothing</item>
+        <item>Manga</item>
+        <item>Poster</item>
+        <item>Cosplay</item>
+        <item>Hoodie</item>
+        <item>Blankets</item>
+        <item>T-Shirt</item>
+        <item>Jackets</item>
+        <item>Plush Toy</item>
+        <item>Keychain</item>
+        <item>Necklace</item>
+        <item>Earrings</item>
+        <item>Watch</item>
+        <item>Ring</item>
+        <item>Bedding</item>
+        <item>Make-Up</item>
+        <item>Shoes</item>
+        <item>Backpack</item>
+        <item>Hand Bag</item>
+        <item>Utensils</item>
+        <item>Wallet</item>
+        <item>Notebook</item>
+        <item>Collection Set</item>
+        <item>Phone Accessories</item>
+        <item>Computer Accessories</item>
+        <item>Wig</item>
+    </string-array>
+
+</resources>
