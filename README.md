@@ -26,6 +26,6 @@ The goal is to design and create the structure of an Inventory App which would a
 | ------------- |:-------------:|------------:|
 <img src="https://image.ibb.co/eRyiKm/1.png" width="300px" alt="1" border="2">|<img src="https://image.ibb.co/mGXzs6/9.png" width="300px" alt="9" border="2">|<img src="https://image.ibb.co/jL1EQR/8.png" width="300px" alt="8" border="2">|
 
-Disclaimer: None of the images used belong to me.
+Disclaimer: None of the images used to create this app belong to me.
 
 
